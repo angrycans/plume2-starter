@@ -1,3 +1,8 @@
+/**
+ * postcss setting
+ * http://postcss.parts/ postcss插件
+ */
+
 module.exports = {
   plugins: {
     'postcss-import': {
@@ -5,6 +10,8 @@ module.exports = {
     },
     'postcss-mixins': {},
     'postcss-each': {},
-    'postcss-cssnext': {}
+    'postcss-cssnext': {
+       browsers: ['last 2 versions', '> 5%'],
+    },
   },
 };

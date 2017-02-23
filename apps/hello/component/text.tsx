@@ -2,9 +2,8 @@ import * as React from 'react'
 import { Relax } from 'plume2'
 
 const styles: any = require("./text.css");
-//import * as styles2 from './text.css';
 
-const noop = () => {}
+const noop = () => { }
 
 type Handler = () => void;
 
@@ -26,11 +25,14 @@ export default class Text extends React.Component<IProps, any> {
     const {count, text, increment} = this.props
 
     return (
-      <div className={styles.title}>
-        {text} 
-        <a href={'javascript:;'} onClick={increment}>
-          点赞(+{count})
+      <div>
+        <div className="title"> <div>test styles</div></div>
+        <div className={styles.title}>
+          {text}
+          <a href={'javascript:;'} onClick={increment}>
+            点赞(+{count})
         </a>
+        </div>
       </div>
     )
   }
