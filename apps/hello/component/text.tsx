@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Relax } from 'plume2'
 
 const styles: any = require("./text.css");
+//import * as styles2 from './text.css';
 
 const noop = () => {}
 
